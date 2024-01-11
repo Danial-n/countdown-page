@@ -28,11 +28,27 @@
   color: #61dafb;
 }
 
+.absolute {
+  transition: background-color 0.5s ease-in-out;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+  0% {
+    background-color: red;
+    transform: rotateY(0);
+  }
+  50% {
+    background-color: var(--flip-color, red);
+    transform: rotateY(90deg);
+  }
+  100% {
+    background-color: red;
+    transform: rotateY(180deg);
   }
 }

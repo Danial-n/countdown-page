@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Icons from './components/Icons';
+import Stars from './components/Stars';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Box from './components/Box';
+import Timer from './components/Timer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-mostly-black text-white text-center pt-20 md:pt-0 h-screen relative'>
+      <Stars />
+      <Header />
+      <Timer />
+      {/* <Box /> */}
+      <Footer />
     </div>
   );
 }
